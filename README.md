@@ -101,15 +101,12 @@ trigger <trigger-name> on <standard-or-custom-object> (<event-type-01>, <event-t
 }
 ```
 
- > Event Type informatiom
-
-```
-- before insert - used for field validation & field updates
-- after insert - multiple objects & automations. Ex : add into new other objects
-```
-
 
 #### Trigger Event Types
+
+- before triggers- are used to update or validate records before they are saved to db
+- after triggers - multiple objects & automations. Ex : add into new other objects
+
 
 | #    | Event Name | Notes|
 | :---   | :--- | :--- |
