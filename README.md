@@ -26,12 +26,22 @@ where <> Name='abc'
 ```
 
 ```
-User u=[Select id, Name from User where Name='abc'];
-Account ac=new Account();
-ac.Name='Test';
+User u = [Select id, Name from User where Name='abc'];
+
+Account ac = new Account();
+ac.Name ='Test';
 ac.OwnerId=u.id;
+
 insert ac;
 ```
+
+## Flow
+
+<ul>
+  <li>Fast Field Update - isBefore Operation</li>
+  <li>Actions & Releated Records - isAfter Operation</li>
+</ul>
+
 
 ## Apex Code
 
@@ -72,8 +82,6 @@ insert ac;
 | size | |
 
 
-
-
 #### Trigger Syntax
 
 ```
@@ -86,7 +94,7 @@ trigger <trigger-name> on <standard-or-custom-object> (<event-type-01>, <event-t
 }
 ```
 
-> Event Type informatiom
+ > Event Type informatiom
 <ul>
 <li>before insert</li>
   <li>before update</li>
