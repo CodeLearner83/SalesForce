@@ -90,10 +90,12 @@ insert ac;
 #### Trigger Syntax
 
 ```
+// 1 event type parameter
 trigger <trigger-name> on <standard-or-custom-object> (<event-type>) {
   // loigc
 }
 
+// multiple events type parameter
 trigger <trigger-name> on <standard-or-custom-object> (<event-type-01>, <event-type-02>, <event-type-03>) {
   // loigc
 }
@@ -108,6 +110,18 @@ trigger <trigger-name> on <standard-or-custom-object> (<event-type-01>, <event-t
 <li>before delete</li>
 <li>after delete</li> 
 </ul>
+
+| #    | Event Name | Notes|
+| :---   | :--- | :--- |
+| 1   | beforeInsert |  |
+| 2   | beforeUpdate |  |
+| 3   | beforeDelete |  |
+| 4   | afterInsert |  |
+| 5   | afterUpdate |  |
+| 6   | afterDelete |  |
+| 7   | afterUndelete |  |
+
+
 
 #### Example - Trigger Code
 > Below trigger will be fired when user tries to insert new record into the system
