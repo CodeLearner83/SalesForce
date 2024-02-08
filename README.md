@@ -17,4 +17,27 @@ insert student;
 
 ## Trigger
 
-###
+#### Syntax
+
+```
+trigger <trigger-name> on <standard-or-custom-object> (<trigger-type>) {
+  // loigc
+}
+```
+#### Example
+> Below trigger will be fired when user tries to insert new record into the system
+> Note
+  > Below trigger will change the user entered email id with the email mentioned in the trigger
+
+```
+trigger StudentTrigger on Student__c (before insert) {
+    string emailId = 'trigger-before-insert@xyz.com';
+    if(trigger.IsInsert && trigger.IsBefore) {
+        for(Student__c sp:Trigger.new){
+          sp.Email_Id__c = emailId;
+        }
+    }
+}
+```
+
+
