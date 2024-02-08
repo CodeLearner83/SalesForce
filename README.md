@@ -53,6 +53,24 @@ insert ac;
 | write apex code | no apex code | 
 | if requirement is not met with validation rules | simple requirements only |
 
+#### Trigger Context Variables
+> a group of variables that will be available which hold runtime/background information of the current trigger when it is running/executing
+> Below table 
+
+| Trigger Context Variables   | Data Type | Notes|
+| :---   | :--- | :---: | 
+| isInsert | Boolean| 
+| isUpdate |Boolean| 
+| isDelete |Boolean|
+| isBefore |Boolean|
+| isAfter |Boolean|
+| old ||
+| new ||
+| oldmap ||
+| newmap | |
+| isExecuting |Boolean |
+| size | |
+
 
 
 #### Trigger Syntax
@@ -62,6 +80,7 @@ trigger <trigger-name> on <standard-or-custom-object> (<trigger-type>) {
   // loigc
 }
 ```
+
 #### Example - Trigger Code
 > Below trigger will be fired when user tries to insert new record into the system
 > Note
