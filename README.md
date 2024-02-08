@@ -12,6 +12,7 @@ student.Student_Id__c = 1001;
 student.DOB__c = d;
 student.Email_Id__c = 'A101@xyz.com';
 
+insert student;  
 ```
 
 ## Trigger
