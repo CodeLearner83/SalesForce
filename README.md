@@ -101,13 +101,13 @@ trigger <trigger-name> on <standard-or-custom-object> (<event-type-01>, <event-t
 
  > Event Type informatiom
 <ul>
-<li>before insert</li>
+<li>before insert - used for field validation & field updates</li>
 <li>before update</li>
-<li>after insert</li>
+<li>after insert - multiple objects & automations. Ex : add into new other objects </li>
 <li>after update</li>
 <li>before delete</li>
 <li>after delete</li> 
-</ul>  
+</ul>
 
 #### Example - Trigger Code
 > Below trigger will be fired when user tries to insert new record into the system
