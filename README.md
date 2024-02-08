@@ -102,14 +102,14 @@ trigger <trigger-name> on <standard-or-custom-object> (<event-type-01>, <event-t
 ```
 
  > Event Type informatiom
-<ul>
-<li>before insert - used for field validation & field updates</li>
-<li>before update</li>
-<li>after insert - multiple objects & automations. Ex : add into new other objects </li>
-<li>after update</li>
-<li>before delete</li>
-<li>after delete</li> 
-</ul>
+
+```
+- before insert - used for field validation & field updates
+- after insert - multiple objects & automations. Ex : add into new other objects
+```
+
+
+#### Trigger Event Types
 
 | #    | Event Name | Notes|
 | :---   | :--- | :--- |
