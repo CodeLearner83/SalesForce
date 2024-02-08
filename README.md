@@ -121,9 +121,10 @@ trigger <trigger-name> on <standard-or-custom-object> (<event-type-01>, <event-t
 
 
 #### Example - Trigger Code
-> Below trigger will be fired when user tries to insert new record into the system
-> Note
-  > Below trigger will change the user entered email id with the email mentioned in the trigger at runtime when user submits the record
+<ul>
+<li>Below trigger will be fired when user tries to insert new record into the system</li>
+<li>Note : Below trigger will change the user entered email id with the email mentioned in the trigger at runtime when user submits the record</li>
+</ul>
 
 ```
 trigger StudentTrigger on Student__c (before insert) {
