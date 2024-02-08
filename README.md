@@ -81,7 +81,7 @@ insert ac;
 | isExecuting |Boolean |
 | size | integer |
 
-'''
+```
 - Insert Operation - Always have new data (new & newmap)
 - Delete Operation - Always have old data (old & oldmap)
 - Update Operation - Both old data & new data (old|oldmap & new|newmap) . Ex : Address Update - where old address will be in the old & oldmap, new address data will be new & newmap
