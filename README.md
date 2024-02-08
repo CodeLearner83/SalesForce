@@ -12,12 +12,50 @@ student.Student_Id__c = 1001;
 student.DOB__c = d;
 student.Email_Id__c = 'A101@xyz.com';
 
-insert student;  
+insert student;
+```
+## SOQL
+
+
+### Syntax
+
+```
+Select id, Name
+from <standard-or-custom-object>
+where <> Name='abc'
 ```
 
-## Trigger
+```
+User u=[Select id, Name from User where Name='abc'];
+Account ac=new Account();
+ac.Name='Test';
+ac.OwnerId=u.id;
+insert ac;
+```
 
-#### Syntax
+## Apex Code
+
+
+## Trigger
+> Trigger executes automatically when ever any DML operations are performed
+  > DML Operation : Create Record, Update Record, Delete Record, Undelete
+> Are used to perform validation
+  > Ex : user entered data is correct, Student Name should not contain any special chars
+> Also used to perform automation
+  > 
+
+#### Trigger vs Flows
+
+| Trigger   | Validation Rules/Flows |
+| :---   | :--- | 
+| All DML operation (including delete & undelete) | insert & update only | 
+| Any object | one object & associated parent only | 
+| write apex code | no apex code | 
+| if requirement is not met with validation rules | simple requirements only |
+
+
+
+#### Trigger Syntax
 
 ```
 trigger <trigger-name> on <standard-or-custom-object> (<trigger-type>) {
