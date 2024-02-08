@@ -81,6 +81,11 @@ insert ac;
 | isExecuting |Boolean |
 | size | integer |
 
+'''
+- Insert Operation - Always have new data (new & newmap)
+- Delete Operation - Always have old data (old & oldmap)
+- Update Operation - Both old data & new data (old|oldmap & new|newmap) . Ex : Address Update - where old address will be in the old & oldmap, new address data will be new & newmap
+```
 
 #### Trigger Syntax
 
@@ -97,11 +102,11 @@ trigger <trigger-name> on <standard-or-custom-object> (<event-type-01>, <event-t
  > Event Type informatiom
 <ul>
 <li>before insert</li>
-  <li>before update</li>
-  <li>after insert</li>
-  <li>after update</li>
-  <li>before delete</li>
-  <li>after delete</li> 
+<li>before update</li>
+<li>after insert</li>
+<li>after update</li>
+<li>before delete</li>
+<li>after delete</li> 
 </ul>  
 
 #### Example - Trigger Code
