@@ -2,6 +2,8 @@
 
 ## Add New Record
 
+> All data which were set in the below are mandatory fields for Student Object.
+
 ```
 Date d = Date.valueOf('1990-01-01');
 Student__c student = new Student__c();
@@ -11,3 +13,7 @@ student.DOB__c = d;
 student.Email_Id__c = 'A101@xyz.com';
 
 ```
+
+## Trigger
+
+###
