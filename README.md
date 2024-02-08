@@ -64,10 +64,10 @@ insert ac;
 | isDelete |Boolean|
 | isBefore |Boolean|
 | isAfter |Boolean|
-| old |List| <ul><ol>Data Variables, which stored record information</ol><ol> data before DML operation</ol></ul>
-| new |List| Data Variables, which stored record information. data after/during DML operation
-| oldmap |Map| Data Variables, which stored record information
-| newmap | Map|Data Variables, which stored record information
+| old |List| <ul><ll>Data Variables, which stored record information</li><li> data before DML operation</li></ul>
+| new |List| <ul><ll>Data Variables, which stored record information</li><li> data after/during DML operation</li></ul>
+| oldmap |Map| <ul><ll>Data Variables, which stored record information</li><li>Map key contains id, Map value contains old data</li></ul>
+| newmap | Map|<ul><ll>Data Variables, which stored record information</li><li>Map key contains id, Map value contains new data</li></ul>
 | isExecuting |Boolean |
 | size | |
 
