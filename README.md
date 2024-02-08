@@ -126,13 +126,13 @@ trigger <trigger-name> on <standard-or-custom-object> (<event-type-01>, <event-t
 #### Example - Trigger Code
 > Below trigger will be fired when user tries to insert new record into the system
 > Note
-  > Below trigger will change the user entered email id with the email mentioned in the trigger
+  > Below trigger will change the user entered email id with the email mentioned in the trigger at runtime when user submits the record
 
 ```
 trigger StudentTrigger on Student__c (before insert) {
     string emailId = 'trigger-before-insert@xyz.com';
     if(trigger.IsInsert && trigger.IsBefore) {
-        for(Student__c sp:Trigger.new){
+        for(Student__c sp: Trigger.new){
           sp.Email_Id__c = emailId;
         }
     }
