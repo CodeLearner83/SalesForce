@@ -87,13 +87,14 @@ trigger <trigger-name> on <standard-or-custom-object> (<event-type-01>, <event-t
 ```
 
 > Event Type informatiom
-  > before insert
-  > before update
-  > after insert
-  > after update
-  > before delete
-  > after delete
-
+<ul>
+<li>before insert</li>
+  <li>before update</li>
+  <li>after insert</li>
+  <li>after update</li>
+  <li>before delete</li>
+  <li>after delete</li> 
+</ul>  
 
 
 
