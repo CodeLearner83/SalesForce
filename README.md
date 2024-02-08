@@ -22,7 +22,8 @@ insert student;
 ```
 Select id, Name
 from <standard-or-custom-object>
-where <> Name='abc'
+where <filters>  --Name='abc'
+order by <field-name> <asc or desc>
 ```
 
 ```
