@@ -77,10 +77,25 @@ insert ac;
 #### Trigger Syntax
 
 ```
-trigger <trigger-name> on <standard-or-custom-object> (<trigger-type>) {
+trigger <trigger-name> on <standard-or-custom-object> (<event-type>) {
+  // loigc
+}
+
+trigger <trigger-name> on <standard-or-custom-object> (<event-type-01>, <event-type-02>, <event-type-03>) {
   // loigc
 }
 ```
+
+> Event Type informatiom
+  > before insert
+  > before update
+  > after insert
+  > after update
+  > before delete
+  > after delete
+
+
+
 
 #### Example - Trigger Code
 > Below trigger will be fired when user tries to insert new record into the system
