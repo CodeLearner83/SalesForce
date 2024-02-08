@@ -79,7 +79,7 @@ insert ac;
 | oldmap |Map| <ul><li>Data Variables, which stored record information</li><li>Map key contains id, Map value contains old data</li></ul>
 | newmap | Map|<ul><li>Data Variables, which stored record information</li><li>Map key contains id, Map value contains new data</li></ul>
 | isExecuting |Boolean |
-| size | |
+| size | integer |
 
 
 #### Trigger Syntax
@@ -103,8 +103,6 @@ trigger <trigger-name> on <standard-or-custom-object> (<event-type-01>, <event-t
   <li>before delete</li>
   <li>after delete</li> 
 </ul>  
-
-
 
 #### Example - Trigger Code
 > Below trigger will be fired when user tries to insert new record into the system
