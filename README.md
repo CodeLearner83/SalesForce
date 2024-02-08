@@ -56,7 +56,7 @@ insert student;
 #### Testing in Dev Console
 
 | #   | Step Name   | Code    |
-| :---:   | :---: | :---: |
+| :---:   | :--- | :--- |
 | 1 | Login to Developer Console  |    |
 | 2 | Create Apex Trigger  | File ->  Apex Trigger  |
 | 3 | Add Details in Popup Dialog  | Name = Any Name, sObject = Select the object on which you want to create the trigger  |
