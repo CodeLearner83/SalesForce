@@ -169,5 +169,15 @@ insert student;
 
 
 
+## Parent to Child Comminication
+
+- Example
+  -   
+  
+
+## Child to parent Comminication
+- use JavaScript dispatch event and 
+
+
 
 
